@@ -16,7 +16,7 @@ pin=machine.Pin(33,machine.Pin.IN,machine.Pin.PULL_UP)
 def test():
     return pin.value()
 
-X=MQTTClient("openlabs42","test.mosquitto.org")
+X=MQTTClient("openlabs42","clamans.mobach.de")
 while True:
     thetest = test()
     if oldtest != thetest:
